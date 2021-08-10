@@ -4,13 +4,12 @@ interface Config {
 }
 
 interface Endpoints {
-    login: EndpointConfig;
-    register: EndpointConfig;
+    authenticate: EndpointConfig;
+    confirm: EndpointConfig;
     passwordRecovery: EndpointConfig;
     authorization: EndpointConfig;
     accessToken: EndpointConfig;
     refreshToken: EndpointConfig;
-    custom: Array<CustomEndpointConfig>
 }
 
 interface EndpointConfig {
